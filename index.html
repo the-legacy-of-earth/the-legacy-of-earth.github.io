@@ -26,9 +26,16 @@
 
             <div class="flex-row flex-center">
                 <div class="flex-col flex-center">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.kr738Izx8E2E" width="640" height="480"></iframe>
                     <div>Hurry and click on the point to get started</div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.kr738Izx8E2E" width="640" height="480"></iframe>
                 </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="flex-row flex-center">
+                What is the first and last name of the man? <input id="theInput" type="text"> <button onclick="checkAnswer()">Check</button>
             </div>
         </div>
 
@@ -48,6 +55,20 @@
                 align-items: center;
             }
         </style>
+
+        <script>
+            function checkAnswer() {
+                var theInput = document.getElementById('theInput');
+                console.log(theInput.value.toLowerCase().replace(' ', ''))
+                if (theInput.value.toLowerCase().replace(' ', '') === 'josephsmith') {
+                    alert('Excellent! Continue on to the next map.');
+                    window.location.href = 'http://george-washington-adventure.github.io/step-2.html';
+                }
+                else {
+                    alert('Sorry, that is incorrect. Hurry, there is no time to waste!');
+                }
+            }
+        </script>
 
     </body>
 
