@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="flex-col">
+
+            <div class="flex-row flex-center">
+                <div class="flex-col flex-center">
+                    <div class="top-instruction-text">Hurry and click on the point to get started</div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.k7LEuWi4HEGU" class="map-frame"></iframe>
+                </div>
+            </div>
+
+            <div class="flex-col flex-center">
+                <div class="question-text">What are the names of the two paintings? It doesn't matter the order.</div>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <div class="flex-row">
+                        </div>
+                        <input id="boat1" type="text" class="answer-input">
+                        <input id="boat2" type="text" class="answer-input">
+                        <button onclick="PrepareTheBoats.checkAnswer(document.getElementById('boat1').value, document.getElementById('boat2').value)" class="enlist-me-button">Check</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .flex-row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .flex-col {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flex-center {
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>

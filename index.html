@@ -3,72 +3,30 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-        <div class="flex-col">
+        <div class="flex-col main-padding">
             <div class="flex-row flex-center">
-                <h1>George Washington Adventure</h1>
-            </div>
-
-            <div class="flex-row flex-center">
-                <p>Hey Ryan, this is just a basic version of the website for our test. Tell me what you think. And hi Christina and Everett!</p>
+                <h1>The Crossing of the Delaware</h1>
             </div>
 
             <br>
 
             <div class="flex-row flex-center">
-                George Washington needs your help. He is holding a council of war only for the bravest men and women. If you're willing, take this map. Good luck, soldier.
+                George Washington needs your help to defeat the Hessians at Trenton. He is holding a council of war only for the bravest men and women. Continue on if you're willing. Good luck, soldier.
             </div>
 
             <br>
             <br>
 
             <div class="flex-row flex-center">
-                <div class="flex-col flex-center">
-                    <div>Hurry and click on the point to get started</div>
-                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.kr738Izx8E2E" width="640" height="480"></iframe>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="flex-row flex-center">
-                What is the first and last name of the man? <input id="theInput" type="text"> <button onclick="checkAnswer()">Check</button>
+                <button class="enlist-me-button" onclick="Index.enlistMeClick()">Enlist Me</button>
             </div>
         </div>
 
-        <style>
-            .flex-row {
-                display: flex;
-                flex-direction: row;
-            }
-
-            .flex-col {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .flex-center {
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
-
-        <script>
-            function checkAnswer() {
-                var theInput = document.getElementById('theInput');
-                console.log(theInput.value.toLowerCase().replace(' ', ''))
-                if (theInput.value.toLowerCase().replace(' ', '') === 'josephsmith') {
-                    alert('Excellent! Continue on to the next map.');
-                    window.location.href = 'http://george-washington-adventure.github.io/step-2.html';
-                }
-                else {
-                    alert('Sorry, that is incorrect. Hurry, there is no time to waste!');
-                }
-            }
-        </script>
+        <script src="app.js"></script>
 
     </body>
 
