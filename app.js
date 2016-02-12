@@ -49,6 +49,21 @@ var PrepareTheBoats = (function() {
 
 var CrossTheRiver = (function() {
 
+    var o = {};
+
+    o.checkAnswer = function(sevenLetterWord, fourLetterPalindrome) {
+
+        if (sevenLetterWord.toLowerCase() === 'ductile' && fourLetterPalindrome.toLowerCase() === 'assa') {
+            alert('Excellent! Continue on to the next map.');
+            window.location.href = 'attack-trenton.html';
+        }
+        else {
+            alert('Sorry, that is incorrect. Hurry, there is no time to waste!');
+        }
+    }
+
+    return o;
+
 })();
 
 var AttackTrenton = (function() {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="flex-col">
+
+            <div class="flex-row flex-center">
+                <div class="flex-col flex-center">
+                    <div class="top-instruction-text">Hurry and click on the point to get started</div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.kzH-wYdg_1xk" class="map-frame"></iframe>
+                </div>
+            </div>
+
+            <div class="flex-col flex-center">
+                <div class="question-text">What is the 7 letter word?</div>
+                <input id="sevenLetterWord" type="text" class="answer-input">
+                <div class="question-text">What is the 4 letter palindrome?</div>
+                <input id="fourLetterPalindrome" type="text" class="answer-input">
+                <button onclick="CrossTheRiver.checkAnswer(document.getElementById('sevenLetterWord').value, document.getElementById('fourLetterPalindrome').value)" class="check-button">Check</button>
+            </div>
+        </div>
+
+        <style>
+            .flex-row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .flex-col {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flex-center {
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>

@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .main-padding {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -39,7 +43,7 @@
 
 .map-frame {
     width: 100vw;
-    height: 75vh;
+    height: 50vh;
 }
 
 .question-text {
@@ -48,5 +52,13 @@
 }
 
 .answer-input {
-    font-size: 25px;
+    font-size: 10vh;
+    width: 100%;
+}
+
+.check-button {
+    font-size: 10vh;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
