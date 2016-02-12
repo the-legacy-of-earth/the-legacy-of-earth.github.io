@@ -68,4 +68,19 @@ var CrossTheRiver = (function() {
 
 var AttackTrenton = (function() {
 
+    var o = {};
+
+    o.checkAnswer = function(flagInput, ghanaInput) {
+
+        if (flagInput.toLowerCase() === 'flag' && ghanaInput.toLowerCase() === 'ghana') {
+            alert('Excellent! Continue on to the next map.');
+            window.location.href = 'victory.html';
+        }
+        else {
+            alert('Sorry, that is incorrect. Hurry, there is no time to waste!');
+        }
+    }
+
+    return o;
+
 })();

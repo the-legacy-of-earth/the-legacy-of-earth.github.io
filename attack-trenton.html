@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="flex-col">
+
+            <div class="flex-row flex-center">
+                <div class="flex-col flex-center">
+                    <div class="top-instruction-text">Hurry and click on the point to get started</div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=znXGZoTmn8f0.ko48aCqbLqWQ" class="map-frame"></iframe>
+                </div>
+            </div>
+
+            <div class="flex-col flex-center">
+                <div class="question-text">Solve the riddle</div>
+                <input id="flagInput" type="text" class="answer-input" placeholder="4 letter word">
+                <div class="question-text">of</div>
+                <input id="ghanaInput" type="text" class="answer-input" placeholder="5 letter word">
+                <button onclick="AttackTrenton.checkAnswer(document.getElementById('flagInput').value, document.getElementById('ghanaInput').value)" class="check-button">Check</button>
+            </div>
+        </div>
+
+        <style>
+            .flex-row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .flex-col {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flex-center {
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>

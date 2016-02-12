@@ -1,3 +1,9 @@
+@import 'ubuntu-fontface-master/ubuntu.css';
+
+* {
+    font-family: Ubuntu;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -46,9 +52,15 @@
     height: 50vh;
 }
 
+.google-form-frame {
+    width: 100vw;
+    height: 100vh;
+}
+
 .question-text {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 5vw;
 }
 
 .answer-input {
