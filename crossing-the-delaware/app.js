@@ -73,7 +73,7 @@ var AttackTrenton = (function() {
     o.checkAnswer = function(flagInput, ghanaInput) {
 
         if (flagInput.toLowerCase() === 'flag' && ghanaInput.toLowerCase() === 'ghana') {
-            alert('Excellent! Continue on to the next map.');
+            alert('Excellent! Trenton is won! Continue on to hear the final report and instructions.');
             window.location.href = 'victory.html';
         }
         else {
