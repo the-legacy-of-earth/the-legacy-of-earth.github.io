@@ -18,8 +18,14 @@
 }
 
 .adventure-card {
-    width: 90%;
+    width: 500px;
     margin-top: 50px;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+}
+
+@media (max-width: 767px) {
+    .adventure-card {
+        width: 90%;
+    }
 }
