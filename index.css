@@ -24,6 +24,10 @@
     margin-right: 2.5vw;
 }
 
+.receive-updates-text {
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     .adventure-card {
         width: 90%;
